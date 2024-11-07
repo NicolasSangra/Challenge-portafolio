@@ -1,0 +1,88 @@
+.aficiones{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    
+       
+    
+ }
+ 
+ .aficiones__titulo{
+    font-size: 2rem;
+    font-weight: 700;
+ 
+ }
+ 
+ .aficiones__lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+ 
+ }
+ 
+ .aficiones__elemento{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: flex-end;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 176px;
+    height: 174px;
+    background-color: var(--color-de-fondo-menu);
+  }
+
+  .aficiones__icono{
+   width: 40px;
+   height: 40px;
+  }
+ 
+ .aficiones__lista :hover{
+    background-color:var(--color-de-fondo2);
+ }
+
+ @media (max-width: 768px){
+   .aficiones{
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+   }
+
+   .aficiones__titulo{
+      font-size: 22px;
+   
+   }
+
+   .aficiones__lista{
+      display: flex;
+      flex-wrap: wrap;
+   }
+   
+   .aficiones__elemento{
+      width: 224px;
+      height: 118px;
+   }
+ }
+
+ @media (max-width: 360px){
+   .aficiones{
+      padding-left: 1rem;
+      padding-right: 1rem;
+   }
+   .aficiones__elemento{
+      width: 140px;
+      height: 118px;
+   }
+    
+ }

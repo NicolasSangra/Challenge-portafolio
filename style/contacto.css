@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+section.contacto {
+  background-color: var(--color-de-fondo2);
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.formulario__contacto {
+  display: flex;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+
+.formulario__texto {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+
+
+}
+
+.formulario__titulo{
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+
+}
+
+.formulario__subtitulo {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+    
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+
+.formulario__input {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  height: 3.5rem;
+}
+
+.formulario__textarea {
+  height: 8.3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.input-mensaje-error {
+  color: red;
+}
+
+.formulario__boton {
+  all: unset;
+  width: 9rem;
+  height: 3.2rem;
+  border-style: solid;
+  border-width: 0.01rem;
+  margin-top: 2.6rem;
+  padding: 1rem;
+  background-color: var(--color-boton-demo);
+  color: var(--color-de-fondo-menu);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.formulario__boton :hover{
+  background-color: var(--color-seleccion-boton);
+}
+
+.success-message {
+  background-color: #28a745;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 9999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s;
+}
+
+/* Estilo para el mensaje de error */
+.error-message {
+  background-color: #dc3545;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 9999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@media (max-width: 768px){
+  section.contacto {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+  }
+  .formulario__imagen{
+    display: none;
+  }
+
+  .formulario__titulo{
+    font-size: 22px;
+  }
+
+  .formulario__subtitulo {
+    font-size: 16px;
+  }
+
+  .formulario__boton {
+    width: 133px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px){
+  section.contacto {
+    padding-left: 0rem;
+    padding-right: 1rem;
+  }
+
+  .formulario__input {
+    max-width: 358px;
+  }
+}

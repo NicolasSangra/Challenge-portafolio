@@ -1,0 +1,161 @@
+.proyectos{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.proyecto__img{
+    width: 60%;
+}
+
+.proyectos__contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.proyectos__titulo{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.proyecto__informacion{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+   
+    
+}
+
+.proyecto__titulo{
+    
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin:0;
+
+}
+.proyecto__texto{
+    
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+
+}
+.proyecto__enlaces{
+    display: flex;
+    font-size: 1rem;
+    font-weight: 400;
+    gap: 16px;
+    
+
+}
+
+.proyecto__boton{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 116px;
+    height: 51px;
+    border-radius: 1px;
+    border-style:dashed;
+    border-color:var(--color-boton-demo);
+    color:var(--color-boton-demo);
+    cursor: pointer;
+    
+}
+.proyecto__boton:hover{
+    background-color: var(--color-seleccion-boton);
+    color:var(--color-de-fondo-menu)
+}
+
+.proyecto__boton2{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 116px;
+    height: 51px;
+    border-radius: 1px;
+    border-style:dashed;
+    border-color:var(--color-boton-demo);
+    color: var(--color-de-fondo-menu);
+    background-color: var(--color-boton-demo);
+    cursor: pointer;
+    
+}
+
+.proyecto__boton2:hover{
+    background-color: var(--color-seleccion-boton);
+
+}
+
+@media (max-width: 768px){
+    .proyectos{
+        
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .proyectos__titulo{
+        font-size: 22px;
+    }
+
+    .proyectos__contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proyecto__img{
+        width: 100%;
+    }
+
+    .proyecto__titulo{
+        font-size:16px;
+
+    }
+
+    .proyecto__texto{
+        font-size:14px;
+
+    }
+
+    .proyecto__enlaces{
+        font-size: 14px;
+    }
+
+    .proyecto__boton{
+        width: 108px;
+        height: 40px;
+
+    }
+
+    .proyecto__boton2{
+        width: 108px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 360px){
+    .proyectos{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+
+
+
+
+
+
+

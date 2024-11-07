@@ -1,0 +1,113 @@
+
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo2:#eaf2fd;
+    --color-de-fondo-menu: #ffffff;
+    --color-de-link: #000000;
+    --color-boton-demo: #2A7AE4;
+    --color-seleccion-boton: #45a049;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
+    color:#464646;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+.cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:0.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-color: var(--color-de-fondo-menu);
+}
+
+.cabecera__logo {
+    max-width: 80px; /* Ajuste para pantallas pequeñas */
+    
+}
+
+.cabecera__titulo {
+    position: absolute;
+    left: 7.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+
+}
+
+.navegacion__lista {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    gap: 1rem;
+    
+}
+
+.navegacion__elemento a {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.navegacion__elemento #contacto {
+    font-weight: 700;
+}
+
+
+@media (max-width: 768px) {
+
+    .cabecera{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .cabecera__titulo {
+        position: absolute;
+        left: 4.5rem;
+        font-size: 1rem;
+        font-weight: 700;
+    
+    }
+    
+    .navegacion__lista li:not(:last-child) {
+        display: none; 
+    }
+      
+    }
+
+@media (max-width: 360px){
+    .cabecera{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .cabecera__titulo {
+        position: absolute;
+        left: 3.5rem;
+        font-size: 1rem;
+        font-weight: 700;
+    
+    }
+    .navegacion__lista{
+        display: none;
+    }
+}
+

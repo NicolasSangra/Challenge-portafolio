@@ -1,0 +1,15 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    text-align: center;  
+    font-size: 1rem;
+    padding: 32px;
+    background-color: var(--color-de-fondo-menu);
+}
+
+@media (max-width: 360px){
+    .footer{
+        font-size: 0.75rem;
+    }
+}
